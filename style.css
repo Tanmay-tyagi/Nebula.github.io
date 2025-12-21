@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top, #1e1b4b, #020617);
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+header {
+  padding: 120px 20px;
+}
+
+h1 {
+  font-size: 4rem;
+  background: linear-gradient(90deg, #a78bfa, #38bdf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.prefix {
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 15px 34px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  background: #6366f1;
+  transition: all 0.3s ease;
+  animation: float 4s ease-in-out infinite;
+  cursor: pointer;
+}
+
+.btn.outline {
+  background: transparent;
+  border: 2px solid #6366f1;
+}
+
+.glow:hover {
+  box-shadow: 0 0 30px #818cf8;
+  transform: scale(1.1);
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+section {
+  padding: 60px 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background: rgba(255,255,255,0.08);
+  padding: 25px;
+  border-radius: 20px;
+  width: 240px;
+  backdrop-filter: blur(10px);
+}
+
+.commands {
+  background: rgba(0,0,0,0.35);
+}
+
+.command-box {
+  max-width: 480px;
+  margin: auto;
+  text-align: left;
+  background: rgba(255,255,255,0.06);
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.command-box span {
+  color: #a78bfa;
+  font-weight: bold;
+}
+
+.count {
+  margin-top: 20px;
+  color: #c7d2fe;
+}
+
+footer {
+  padding: 25px;
+  background: #020617;
+}
+
+.fade-in {
+  animation: fade 1.5s ease forwards;
+}
+
+@keyframes fade {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.music-hint {
+  margin-top: 15px;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
