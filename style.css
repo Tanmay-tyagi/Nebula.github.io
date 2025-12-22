@@ -131,3 +131,11 @@ footer {
   opacity: 0.7;
 }
 
+.update-soon {
+  margin-top: 8px;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  opacity: 0.6;
+  color: #c7d2fe;
+}
+
