@@ -1,10 +1,3 @@
-const music = document.getElementById("bg-music");
-
-document.addEventListener("click", () => {
-  music.volume = 0.35;
-  music.play();
-}, { once: true });
-
 
 // Particle background
 const canvas = document.getElementById("particles");
@@ -48,6 +41,7 @@ function animate() {
 
 animate();
 window.addEventListener("resize", resize);
+
 
 
 
