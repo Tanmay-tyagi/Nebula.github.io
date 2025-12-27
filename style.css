@@ -20,6 +20,14 @@ canvas {
   pointer-events: none;
 }
 
+header,
+section,
+footer {
+  position: relative;
+  z-index: 1;
+}
+
+
 header {
   padding: 120px 20px;
 }
@@ -139,6 +147,7 @@ footer {
   opacity: 0.6;
   color: #c7d2fe;
 }
+
 
 
 
