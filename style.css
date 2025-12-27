@@ -16,7 +16,7 @@ canvas {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: 0;
   pointer-events: none;
 }
 
@@ -139,5 +139,6 @@ footer {
   opacity: 0.6;
   color: #c7d2fe;
 }
+
 
 
