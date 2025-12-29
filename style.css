@@ -149,6 +149,62 @@ footer {
 }
 
 
+/* ===== COMMUNICATE BUTTON ===== */
+.communicate-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.communicate-btn {
+  padding: 14px 36px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #aab4ff;
+  text-decoration: none;
+  border-radius: 999px;
+  border: 2px solid rgba(120, 130, 255, 0.6);
+  background: linear-gradient(
+    180deg,
+    rgba(90, 100, 255, 0.15),
+    rgba(30, 35, 120, 0.15)
+  );
+  box-shadow:
+    0 0 15px rgba(120, 130, 255, 0.35),
+    inset 0 0 10px rgba(120, 130, 255, 0.2);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glow animation */
+.communicate-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at top,
+    rgba(160, 170, 255, 0.35),
+    transparent 60%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.communicate-btn:hover::before {
+  opacity: 1;
+}
+
+.communicate-btn:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 0 30px rgba(150, 160, 255, 0.8),
+    inset 0 0 14px rgba(150, 160, 255, 0.3);
+  color: #ffffff;
+}
+
 
 
 
